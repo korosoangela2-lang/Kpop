@@ -1,4 +1,4 @@
-# 🎵 K-pop World Website
+## K-pop World Website
 
 A dynamic K-pop themed website built using HTML, CSS, and JavaScript (DOM manipulation).
 
@@ -14,8 +14,6 @@ K-pop World is a fan-based website that includes:
 
 All main elements are created dynamically using JavaScript DOM methods.
 
----
-
 ##  Features
 
 - Dynamic navigation menu
@@ -26,7 +24,7 @@ All main elements are created dynamically using JavaScript DOM methods.
 - Responsive layout
 
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
@@ -34,7 +32,7 @@ All main elements are created dynamically using JavaScript DOM methods.
 - DOM Manipulation
 
 
-## 🎯 Learning Goals
+##  Learning Goals
 
 - Practice DOM manipulation
 - Create elements dynamically
@@ -42,7 +40,7 @@ All main elements are created dynamically using JavaScript DOM methods.
 - Build structured frontend projects
 
 
-## 📄 License
+## License
 
 This project is for educational purposes.
 
