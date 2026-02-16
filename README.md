@@ -28,7 +28,7 @@ All main elements are created dynamically using JavaScript DOM methods.
 
 - HTML
 - CSS
-- JavaScript (ES6)
+- JavaScript
 - DOM Manipulation
 
 

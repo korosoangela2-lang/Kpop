@@ -1,3 +1,6 @@
+addEventListener('DOMContentLoaded', () => {
+  console.log("DOM fully loaded and parsed");
+});
 // DATA
 const navLinks = [
   { text: "Info", href: "#info" },
@@ -18,6 +21,19 @@ const galleryImages = [
   { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3K0Oe8GUisw7_fEIitz4wxB-PQ0SeDXAJA&s", alt: "EXO" },
   { src: "https://i.pinimg.com/474x/fa/e5/80/fae5801d34e27dd9f5f259f760a5829a.jpg", alt: "Blackpink" }
 ];
+
+
+//save data in localStorage
+localStorage.setItem('navLinks', JSON.stringify(navLinks));
+localStorage.setItem('kpopGroups', JSON.stringify(kpopGroups));
+localStorage.setItem('galleryImages', JSON.stringify(galleryImages));
+
+// Retrieve data from localStorage
+const storedNavLinks = JSON.parse(localStorage.getItem('navLinks'));
+const storedKpopGroups = JSON.parse(localStorage.getItem('kpopGroups'));
+const storedGalleryImages = JSON.parse(localStorage.getItem('galleryImages'));
+
+console.log("Data retrieved from localStorage:", { storedNavLinks, storedKpopGroups, storedGalleryImages });
 
 // CREATE HEADER
 const body = document.body;
@@ -190,3 +206,4 @@ const footerText = document.createElement('p');
 footerText.textContent = "© 2026 K-pop World";
 footer.appendChild(footerText);
 body.appendChild(footer);
+console.log("Page structure created successfully");

@@ -53,3 +53,32 @@ footer {
 button:hover {
   background: #333;
 }
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+@media(min-width:769px) and (max-width:1024px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+@media (min-width: 1025px) {
+  .cards-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
